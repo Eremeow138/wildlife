@@ -2,49 +2,49 @@
 
 // Float el clear
 %clear_a {
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 %clear_b {
-	&:before {
-		content: '';
-		display: table;
-		clear: both;
-	}
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 %clear_all {
-	@extend %clear_a;
-	@extend %clear_b;
+  @extend %clear_a;
+  @extend %clear_b;
 }
 
 // Transition speed for element
 @mixin trs($trs_speed) {
-	-webkit-transition: all $trs_speed+s;
-	transition: all $trs_speed+s;
+  -webkit-transition: all $trs_speed + s;
+  transition: all $trs_speed + s;
 }
 
 // Placeholder for input
 @mixin placeholder {
-	&::-webkit-input-placeholder {
-		@content
-	};
+  &::-webkit-input-placeholder {
+    @content;
+  }
 
-	&:-moz-placeholder {
-		@content
-	};
+  &:-moz-placeholder {
+    @content;
+  }
 
-	&::-moz-placeholder {
-		@content
-	};
+  &::-moz-placeholder {
+    @content;
+  }
 
-	&:-ms-input-placeholder {
-		@content
-	};
+  &:-ms-input-placeholder {
+    @content;
+  }
 }
 
 // =============================================================================
@@ -75,29 +75,43 @@
 // Font Face
 // =============================================================================
 
-@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-	$src: null;
+@mixin font-face(
+  $name,
+  $path,
+  $weight: null,
+  $style: null,
+  $exts: eot woff2 woff ttf svg
+) {
+  $src: null;
 
-	$extmods: (
-		eot: "?",
-		svg: "#" + str-replace($name, " ", "_")
-	);
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_"),
+  );
 
-	$formats: (
-		otf: "opentype",
-		ttf: "truetype"
-	);
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
 
-	@each $ext in $exts {
-		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-	}
+  @each $ext in $exts {
+    $extmod: if(
+      map-has-key($extmods, $ext),
+      $ext + map-get($extmods, $ext),
+      $ext
+    );
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append(
+      $src,
+      url(quote($path + "." + $extmod)) format(quote($format)),
+      comma
+    );
+  }
 
-	@font-face {
-		font-family: quote($name);
-		font-style: $style;
-		font-weight: $weight;
-		src: $src;
-	}
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
 }

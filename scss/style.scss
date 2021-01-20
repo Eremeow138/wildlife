@@ -1,11 +1,10 @@
-
 //  ==========================
 //  Eremin Alexey
 //  Email: eremeow138@yandex.ru
 //  ==========================
 
 // Подключение примесей
-@import 'mixins/mixin';
+@import "mixins/mixin";
 
 // Пример подключение шрифта через google fonts
 // @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
@@ -15,14 +14,14 @@
 
 // Подключение отдельных фалов стилей в общий css
 // Файл с переменными
-@import 'variables/variables';
+@import "variables/variables";
 // Файл со стилями сброса. Используется подправленный normalize.css
-@import 'core/reset';
+@import "core/reset";
 // Файл с основными стилями каркаса страницы
-@import 'core/template';
+@import "core/template";
 // Стили для шапки
-@import 'core/header';
+@import "core/header";
 // Стили для навигации
-@import 'core/navbar';
+@import "core/navbar";
 // Стили для подвала
-@import 'core/footer';
+@import "core/footer";
