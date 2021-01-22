@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.header:after, .main__content:after, .footer:after {
+.footer:after, .main__content:after, .header:after {
   content: "";
   display: table;
   clear: both;
@@ -11,16 +11,95 @@
   clear: both;
 }
 
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Roboto/Roboto-Bold.eot?") format("eot"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Bold.svg#str-replace("Roboto", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Roboto/Roboto-Black.eot?") format("eot"), url("../fonts/Roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Black.woff") format("woff"), url("../fonts/Roboto/Roboto-Black.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Black.svg#str-replace("Roboto", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Roboto/Roboto-Light.eot?") format("eot"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Light.svg#str-replace("Roboto", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Roboto/Roboto-Thin.eot?") format("eot"), url("../fonts/Roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Thin.svg#str-replace("Roboto", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Roboto/Roboto-Medium.eot?") format("eot"), url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Medium.svg#str-replace("Roboto", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto/Roboto-Regular.eot?") format("eot"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Regular.svg#str-replace("Roboto", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Open_Sans/OpenSans-Light.eot?") format("eot"), url("../fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype"), url('../fonts/Open_Sans/OpenSans-Light.svg#str-replace("Open Sans", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Open_Sans/OpenSans-Bold.eot?") format("eot"), url("../fonts/Open_Sans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/Open_Sans/OpenSans-Bold.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype"), url('../fonts/Open_Sans/OpenSans-Bold.svg#str-replace("Open Sans", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Open_Sans/OpenSans-ExtraBold.eot?") format("eot"), url("../fonts/Open_Sans/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/Open_Sans/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype"), url('../fonts/Open_Sans/OpenSans-ExtraBold.svg#str-replace("Open Sans", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Open_Sans/OpenSans-Regular.eot?") format("eot"), url("../fonts/Open_Sans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/Open_Sans/OpenSans-Regular.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"), url('../fonts/Open_Sans/OpenSans-Regular.svg#str-replace("Open Sans", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Open_Sans/OpenSans-SemiBold.eot?") format("eot"), url("../fonts/Open_Sans/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/Open_Sans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype"), url('../fonts/Open_Sans/OpenSans-SemiBold.svg#str-replace("Open Sans", " ", "_")') format("svg");
+}
+
 /* Global variables */
 /* ======================================================================== */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body, .wrapper {
   height: 100%;
   position: relative;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -47,7 +126,7 @@ body {
   margin: 0;
   font-size: 100%;
   font-family: "Open Sans";
-  color: #000;
+  color: #f7f7f7;
   line-height: 1.2;
 }
 
@@ -92,7 +171,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -123,6 +203,7 @@ a {
   -webkit-text-decoration-skip: objects;
   /* 2 */
 }
+
 a:focus {
   outline: 0;
 }
@@ -287,9 +368,9 @@ select {
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-html [type=button],
-[type=reset],
-[type=submit] {
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
 }
@@ -298,9 +379,9 @@ html [type=button],
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -309,9 +390,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -329,7 +410,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -365,9 +447,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -376,8 +459,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -385,7 +468,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -395,8 +478,8 @@ textarea {
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -455,11 +538,11 @@ template {
 }
 
 .wrapper {
-  font-size: 16px;
+  font-size: 18px;
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -100px auto;
+  margin: 0 auto -359px auto;
 }
 
 .container_center {
@@ -472,7 +555,7 @@ template {
 /* Middle
  ----------------------------------------------------------------------------- */
 .main__content {
-  padding-bottom: 100px;
+  padding-bottom: 359px;
 }
 
 /* Набросок стилей для шапки
@@ -481,6 +564,7 @@ template {
   background-color: #ccc;
   padding: 10px 0;
 }
+
 .header__logo {
   background-color: #ddd;
   float: left;
@@ -495,17 +579,21 @@ template {
   overflow: hidden;
   text-align: right;
 }
+
 .navbar__item {
   display: inline-block;
 }
+
 /* Набросок стилей для подвала
  ----------------------------------------------------------------------------- */
 .footer {
   position: relative;
-  height: 100px;
+  height: 359px;
   background: #bff08e;
 }
+
 .footer .container_center {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/*# sourceMappingURL=style.css.map */
