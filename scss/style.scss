@@ -62,3 +62,23 @@
 @import "core/navbar";
 // Стили для подвала
 @import "core/footer";
+
+.button {
+  background-color: transparent;
+  border: 2px solid #cd6326;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 23px;
+  padding: 10px 23px;
+  color: #f7f7f7;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: #cd6326;
+  }
+  &:active {
+    background-color: #8f5613;
+    border-color: #8f5613;
+  }
+}

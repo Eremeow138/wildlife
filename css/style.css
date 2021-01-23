@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.footer:after, .main__content:after, .header:after {
+.footer:after, .main__content:after {
   content: "";
   display: table;
   clear: both;
@@ -95,7 +95,9 @@
           box-sizing: border-box;
 }
 
-html, body, .wrapper {
+html,
+body,
+.wrapper {
   height: 100%;
   position: relative;
   -webkit-box-sizing: content-box;
@@ -133,7 +135,18 @@ body {
 /**
  * Add the correct display in IE 9-.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
   display: block;
 }
 
@@ -202,6 +215,8 @@ a {
   /* 1 */
   -webkit-text-decoration-skip: objects;
   /* 2 */
+  text-decoration: none;
+  color: inherit;
 }
 
 a:focus {
@@ -546,7 +561,7 @@ template {
 }
 
 .container_center {
-  max-width: 1200px;
+  max-width: 1230px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -562,26 +577,88 @@ template {
  ----------------------------------------------------------------------------- */
 .header {
   background-color: #ccc;
-  padding: 10px 0;
 }
 
-.header__logo {
-  background-color: #ddd;
-  float: left;
-  width: 100px;
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.logotype__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logotype__text {
+  margin-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.navbar__link {
+  text-decoration: none;
 }
 
 /* Набросок стилей для навигации
 -------------------------------------------------------------------------------*/
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  text-align: right;
+  font-size: 23px;
 }
 
 .navbar__item {
   display: inline-block;
+  margin: 0 32px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar__item:last-child {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.navbar__item:hover {
+  color: #cd6326;
+}
+
+.navbar__item:active {
+  color: #8f5613;
+}
+
+.navbar__item svg {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.navbar__item svg:hover #search {
+  fill: #cd6326;
+}
+
+.navbar__item svg:active #search {
+  fill: #8f5613;
 }
 
 /* Набросок стилей для подвала
@@ -595,5 +672,28 @@ template {
 .footer .container_center {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #cd6326;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 23px;
+  padding: 10px 23px;
+  color: #f7f7f7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #cd6326;
+}
+
+.button:active {
+  background-color: #8f5613;
+  border-color: #8f5613;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
-        <div class="header__left"><a class="header__logo" href="/"><img src="img/logo.png" alt="alt"/></a></div>
-        <nav class="header__right">
-          <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="undefined#">Главная</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="undefined#">О нас</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="undefined#">Контакты</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="undefined#">Отзывы</a></li>
-          </ul>
-        </nav>
+      <div class="container_center">
+        <div class="header__content">
+          <div class="header__left">
+            <div class="logotype">
+              <a class="logotype__link" href="/#">
+                <img src="img/logo.svg" alt="logo" />
+                <span class="logotype__text">Wildlife</span>
+              </a>
+            </div>
+          </div>
+          <nav class="header__right">
+            <ul class="navbar">
+              <li class="navbar__item">
+                <a class="navbar__link" href="/#">Blog</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/#">Contacts</a>
+              </li>
+              <li class="navbar__item">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="search"
+                    d="M12.688 18.688C16.001 18.688 18.688 16 18.688 12.688C18.688 9.376 16 6.688 12.688 6.688C9.376 6.688 6.688 9.376 6.688 12.688C6.688 16 9.376 18.688 12.688 18.688ZM20.688 18.688L27.313 25.313L25.313 27.313L18.688 20.688V19.625L18.313 19.25C16.813 20.563 14.813 21.313 12.688 21.313C7.875 21.313 4 17.5 4 12.688C4 7.876 7.875 4 12.688 4C17.501 4 21.313 7.875 21.313 12.688C21.313 14.813 20.563 16.813 19.25 18.313L19.625 18.688H20.688Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li class="navbar__item">
+                <button class="button">Sign in</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main_content">
@@ -26,7 +55,9 @@
     </main>
     <footer class="footer">
       <div class="container_center">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
+        <p></p>
+        &copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i
+        ><a href="#">View Source</a>
       </div>
     </footer>
   </body>

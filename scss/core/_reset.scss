@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-html,body,.wrapper {
+html,
+body,
+.wrapper {
   height: 100%;
   position: relative;
   box-sizing: content-box;
@@ -44,7 +46,18 @@ body {
  * Add the correct display in IE 9-.
  */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
   display: block;
 }
 
@@ -68,7 +81,8 @@ h1 {
 
 figcaption,
 figure,
-main { /* 1 */
+main {
+  /* 1 */
   display: block;
 }
 
@@ -115,6 +129,8 @@ a {
   &:focus {
     outline: 0;
   }
+  text-decoration: none;
+  color: inherit;
 }
 
 /**
@@ -264,7 +280,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
   outline: 0;
 }
@@ -275,7 +292,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
