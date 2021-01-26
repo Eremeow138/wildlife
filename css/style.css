@@ -377,6 +377,10 @@ select {
   text-transform: none;
 }
 
+button {
+  border-width: 0;
+}
+
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
@@ -679,13 +683,14 @@ template {
 }
 
 .button {
-  background-color: transparent;
-  border: 2px solid #cd6326;
+  background-color: #cd6326;
+  border-color: #cd6326;
+  border-style: solid;
   border-radius: 5px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 23px;
-  padding: 10px 23px;
+  padding: 16px 44px;
   color: #f7f7f7;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -693,12 +698,32 @@ template {
 }
 
 .button:hover {
-  background-color: #cd6326;
+  background-color: #e39128;
 }
 
 .button:active {
   background-color: #8f5613;
   border-color: #8f5613;
+}
+
+.button_border-wigth-bold {
+  border-width: 2px;
+}
+
+.button_border-wigth-thin {
+  border-width: 1px;
+}
+
+.button_small {
+  padding: 10px 23px;
+}
+
+.button_small:hover {
+  background-color: #cd6326;
+}
+
+.button_tranparent {
+  background-color: transparent;
 }
 
 .section {

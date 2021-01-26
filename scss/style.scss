@@ -64,22 +64,40 @@
 @import "core/footer";
 
 .button {
-  background-color: transparent;
-  border: 2px solid #cd6326;
+  background-color: #cd6326;
+  border-color: #cd6326;
+  border-style: solid;
   border-radius: 5px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 23px;
-  padding: 10px 23px;
+  padding: 16px 44px;
   color: #f7f7f7;
   transition: all 0.3s;
   cursor: pointer;
   &:hover {
-    background-color: #cd6326;
+    background-color: #e39128;
   }
   &:active {
     background-color: #8f5613;
     border-color: #8f5613;
+  }
+  &_border-wigth-bold {
+    border-width: 2px;
+  }
+  &_border-wigth-thin {
+    border-width: 1px;
+  }
+  &_small {
+    padding: 10px 23px;
+  }
+  &_small:hover {
+    background-color: #cd6326;
+  }
+  &_tranparent {
+    background-color: transparent;
+  }
+  &_bd-radius-right {
   }
 }
 .section {
