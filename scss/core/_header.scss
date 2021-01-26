@@ -1,7 +1,12 @@
 /* Набросок стилей для шапки
  ----------------------------------------------------------------------------- */
 .header {
-  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: transparent;
 
   &__content {
     display: flex;

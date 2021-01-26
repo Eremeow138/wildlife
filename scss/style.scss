@@ -82,3 +82,38 @@
     border-color: #8f5613;
   }
 }
+.section {
+  padding: 15px 0;
+}
+.survival {
+  padding-top: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  &__content {
+    margin-top: 108px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: 274px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #cd6326;
+  }
+
+  &__description {
+    margin-top: 59px;
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}

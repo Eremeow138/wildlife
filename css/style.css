@@ -156,7 +156,7 @@ summary {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -576,7 +576,11 @@ template {
 /* Набросок стилей для шапки
  ----------------------------------------------------------------------------- */
 .header {
-  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
 }
 
 .header__content {
@@ -695,5 +699,49 @@ template {
 .button:active {
   background-color: #8f5613;
   border-color: #8f5613;
+}
+
+.section {
+  padding: 15px 0;
+}
+
+.survival {
+  padding-top: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.survival__content {
+  margin-top: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.survival__item {
+  max-width: 274px;
+}
+
+.survival__title {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #cd6326;
+}
+
+.survival__description {
+  margin-top: 59px;
+  margin-bottom: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
 }
 /*# sourceMappingURL=style.css.map */
