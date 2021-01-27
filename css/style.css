@@ -995,7 +995,7 @@ template {
 .notification__form textarea {
   width: 100%;
   background-color: transparent;
-  padding: 9px 0 0 15px;
+  padding: 4px 0 0 15px;
   border: 1px solid #666666;
   border-right: none;
   outline: none;
