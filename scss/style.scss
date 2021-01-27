@@ -2,10 +2,10 @@
 //  Eremin Alexey
 //  Email: eremeow138@yandex.ru
 //  ==========================
-
+// Файл с переменными
+@import "variables/variables";
 // Подключение примесей
 @import "mixins/mixin";
-
 // Пример подключение шрифта через google fonts
 // @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
 // Пример подключение шрифта через mixin
@@ -50,8 +50,7 @@
 );
 
 // Подключение отдельных фалов стилей в общий css
-// Файл с переменными
-@import "variables/variables";
+
 // Файл со стилями сброса. Используется подправленный normalize.css
 @import "core/reset";
 // Файл с основными стилями каркаса страницы
@@ -94,10 +93,14 @@
   &_small:hover {
     background-color: #cd6326;
   }
+  &_medium {
+    padding: 17px 34px;
+  }
   &_tranparent {
     background-color: transparent;
   }
   &_bd-radius-right {
+    border-radius: 0px 5px 5px 0px;
   }
   &:active {
     background-color: #8f5613;
@@ -253,5 +256,58 @@
   &__subtitle {
     margin-bottom: 43px;
     font-size: 17px;
+  }
+}
+.notification {
+  background-color: #cccccc;
+  &__content {
+    margin: 187px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 660px;
+  }
+
+  &__title {
+    font-size: 27px;
+    color: #333;
+    font-weight: 400;
+  }
+
+  &__form {
+    margin-top: 36px;
+    display: flex;
+
+    width: 100%;
+    @include formField {
+      width: 100%;
+
+      background-color: transparent;
+      padding: 9px 0 0 15px;
+      border: 1px solid #666666;
+      border-right: none;
+      outline: none;
+      font-size: 23px;
+      transition: all 0.3s;
+      text-align: left;
+      color: #666;
+      @include placeholder {
+        font-family: "Roboto";
+        font-size: 23px;
+        color: #666;
+      }
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      &:focus {
+        background-color: #fff;
+        @include placeholder {
+          color: transparent;
+        }
+      }
+
+    }
   }
 }

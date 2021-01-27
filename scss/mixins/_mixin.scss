@@ -47,6 +47,21 @@
   }
 }
 
+@mixin formField {
+  input:not([type]),
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"],
+  textarea {
+    @content;
+  }
+}
+
 // =============================================================================
 // Fonts
 // =============================================================================

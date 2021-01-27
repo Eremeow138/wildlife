@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Global variables */
+/* ======================================================================== */
 .footer:after, .main__content:after {
   content: "";
   display: table;
@@ -88,8 +90,6 @@
   src: url("../fonts/Open_Sans/OpenSans-SemiBold.eot?") format("eot"), url("../fonts/Open_Sans/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/Open_Sans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype"), url('../fonts/Open_Sans/OpenSans-SemiBold.svg#str-replace("Open Sans", " ", "_")') format("svg");
 }
 
-/* Global variables */
-/* ======================================================================== */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -721,8 +721,16 @@ template {
   background-color: #cd6326;
 }
 
+.button_medium {
+  padding: 17px 34px;
+}
+
 .button_tranparent {
   background-color: transparent;
+}
+
+.button_bd-radius-right {
+  border-radius: 0px 5px 5px 0px;
 }
 
 .button:active {
@@ -933,5 +941,199 @@ template {
 .slider__subtitle {
   margin-bottom: 43px;
   font-size: 17px;
+}
+
+.notification {
+  background-color: #cccccc;
+}
+
+.notification__content {
+  margin: 187px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 660px;
+}
+
+.notification__title {
+  font-size: 27px;
+  color: #333;
+  font-weight: 400;
+}
+
+.notification__form {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.notification__form input:not([type]),
+.notification__form input[type="datetime"],
+.notification__form input[type="email"],
+.notification__form input[type="number"],
+.notification__form input[type="password"],
+.notification__form input[type="search"],
+.notification__form input[type="tel"],
+.notification__form input[type="text"],
+.notification__form input[type="url"],
+.notification__form textarea {
+  width: 100%;
+  background-color: transparent;
+  padding: 9px 0 0 15px;
+  border: 1px solid #666666;
+  border-right: none;
+  outline: none;
+  font-size: 23px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: left;
+  color: #666;
+}
+
+.notification__form input:not([type])::-webkit-input-placeholder,
+.notification__form input[type="datetime"]::-webkit-input-placeholder,
+.notification__form input[type="email"]::-webkit-input-placeholder,
+.notification__form input[type="number"]::-webkit-input-placeholder,
+.notification__form input[type="password"]::-webkit-input-placeholder,
+.notification__form input[type="search"]::-webkit-input-placeholder,
+.notification__form input[type="tel"]::-webkit-input-placeholder,
+.notification__form input[type="text"]::-webkit-input-placeholder,
+.notification__form input[type="url"]::-webkit-input-placeholder,
+.notification__form textarea::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-size: 23px;
+  color: #666;
+}
+
+.notification__form input:not([type]):-moz-placeholder,
+.notification__form input[type="datetime"]:-moz-placeholder,
+.notification__form input[type="email"]:-moz-placeholder,
+.notification__form input[type="number"]:-moz-placeholder,
+.notification__form input[type="password"]:-moz-placeholder,
+.notification__form input[type="search"]:-moz-placeholder,
+.notification__form input[type="tel"]:-moz-placeholder,
+.notification__form input[type="text"]:-moz-placeholder,
+.notification__form input[type="url"]:-moz-placeholder,
+.notification__form textarea:-moz-placeholder {
+  font-family: "Roboto";
+  font-size: 23px;
+  color: #666;
+}
+
+.notification__form input:not([type])::-moz-placeholder,
+.notification__form input[type="datetime"]::-moz-placeholder,
+.notification__form input[type="email"]::-moz-placeholder,
+.notification__form input[type="number"]::-moz-placeholder,
+.notification__form input[type="password"]::-moz-placeholder,
+.notification__form input[type="search"]::-moz-placeholder,
+.notification__form input[type="tel"]::-moz-placeholder,
+.notification__form input[type="text"]::-moz-placeholder,
+.notification__form input[type="url"]::-moz-placeholder,
+.notification__form textarea::-moz-placeholder {
+  font-family: "Roboto";
+  font-size: 23px;
+  color: #666;
+}
+
+.notification__form input:not([type]):-ms-input-placeholder,
+.notification__form input[type="datetime"]:-ms-input-placeholder,
+.notification__form input[type="email"]:-ms-input-placeholder,
+.notification__form input[type="number"]:-ms-input-placeholder,
+.notification__form input[type="password"]:-ms-input-placeholder,
+.notification__form input[type="search"]:-ms-input-placeholder,
+.notification__form input[type="tel"]:-ms-input-placeholder,
+.notification__form input[type="text"]:-ms-input-placeholder,
+.notification__form input[type="url"]:-ms-input-placeholder,
+.notification__form textarea:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-size: 23px;
+  color: #666;
+}
+
+.notification__form input:not([type]):hover,
+.notification__form input[type="datetime"]:hover,
+.notification__form input[type="email"]:hover,
+.notification__form input[type="number"]:hover,
+.notification__form input[type="password"]:hover,
+.notification__form input[type="search"]:hover,
+.notification__form input[type="tel"]:hover,
+.notification__form input[type="text"]:hover,
+.notification__form input[type="url"]:hover,
+.notification__form textarea:hover {
+  background-color: #fff;
+}
+
+.notification__form input:not([type]):focus,
+.notification__form input[type="datetime"]:focus,
+.notification__form input[type="email"]:focus,
+.notification__form input[type="number"]:focus,
+.notification__form input[type="password"]:focus,
+.notification__form input[type="search"]:focus,
+.notification__form input[type="tel"]:focus,
+.notification__form input[type="text"]:focus,
+.notification__form input[type="url"]:focus,
+.notification__form textarea:focus {
+  background-color: #fff;
+}
+
+.notification__form input:not([type]):focus::-webkit-input-placeholder,
+.notification__form input[type="datetime"]:focus::-webkit-input-placeholder,
+.notification__form input[type="email"]:focus::-webkit-input-placeholder,
+.notification__form input[type="number"]:focus::-webkit-input-placeholder,
+.notification__form input[type="password"]:focus::-webkit-input-placeholder,
+.notification__form input[type="search"]:focus::-webkit-input-placeholder,
+.notification__form input[type="tel"]:focus::-webkit-input-placeholder,
+.notification__form input[type="text"]:focus::-webkit-input-placeholder,
+.notification__form input[type="url"]:focus::-webkit-input-placeholder,
+.notification__form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.notification__form input:not([type]):focus:-moz-placeholder,
+.notification__form input[type="datetime"]:focus:-moz-placeholder,
+.notification__form input[type="email"]:focus:-moz-placeholder,
+.notification__form input[type="number"]:focus:-moz-placeholder,
+.notification__form input[type="password"]:focus:-moz-placeholder,
+.notification__form input[type="search"]:focus:-moz-placeholder,
+.notification__form input[type="tel"]:focus:-moz-placeholder,
+.notification__form input[type="text"]:focus:-moz-placeholder,
+.notification__form input[type="url"]:focus:-moz-placeholder,
+.notification__form textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.notification__form input:not([type]):focus::-moz-placeholder,
+.notification__form input[type="datetime"]:focus::-moz-placeholder,
+.notification__form input[type="email"]:focus::-moz-placeholder,
+.notification__form input[type="number"]:focus::-moz-placeholder,
+.notification__form input[type="password"]:focus::-moz-placeholder,
+.notification__form input[type="search"]:focus::-moz-placeholder,
+.notification__form input[type="tel"]:focus::-moz-placeholder,
+.notification__form input[type="text"]:focus::-moz-placeholder,
+.notification__form input[type="url"]:focus::-moz-placeholder,
+.notification__form textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.notification__form input:not([type]):focus:-ms-input-placeholder,
+.notification__form input[type="datetime"]:focus:-ms-input-placeholder,
+.notification__form input[type="email"]:focus:-ms-input-placeholder,
+.notification__form input[type="number"]:focus:-ms-input-placeholder,
+.notification__form input[type="password"]:focus:-ms-input-placeholder,
+.notification__form input[type="search"]:focus:-ms-input-placeholder,
+.notification__form input[type="tel"]:focus:-ms-input-placeholder,
+.notification__form input[type="text"]:focus:-ms-input-placeholder,
+.notification__form input[type="url"]:focus:-ms-input-placeholder,
+.notification__form textarea:focus:-ms-input-placeholder {
+  color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
