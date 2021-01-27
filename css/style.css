@@ -705,11 +705,6 @@ template {
   background-color: #e39128;
 }
 
-.button:active {
-  background-color: #8f5613;
-  border-color: #8f5613;
-}
-
 .button_border-wigth-bold {
   border-width: 2px;
 }
@@ -728,6 +723,11 @@ template {
 
 .button_tranparent {
   background-color: transparent;
+}
+
+.button:active {
+  background-color: #8f5613;
+  border-color: #8f5613;
 }
 
 .section {

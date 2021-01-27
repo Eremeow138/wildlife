@@ -82,10 +82,6 @@
   &:hover {
     background-color: #e39128;
   }
-  &:active {
-    background-color: #8f5613;
-    border-color: #8f5613;
-  }
   &_border-wigth-bold {
     border-width: 2px;
   }
@@ -102,6 +98,10 @@
     background-color: transparent;
   }
   &_bd-radius-right {
+  }
+  &:active {
+    background-color: #8f5613;
+    border-color: #8f5613;
   }
 }
 .section {
