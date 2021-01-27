@@ -261,7 +261,7 @@
 .notification {
   background-color: #cccccc;
   &__content {
-    margin: 187px auto;
+    margin: 187px auto 224px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,3 +310,4 @@
     }
   }
 }
+

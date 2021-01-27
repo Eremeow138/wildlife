@@ -1,13 +1,7 @@
 @charset "UTF-8";
 /* Global variables */
 /* ======================================================================== */
-.footer:after, .main__content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.footer:before {
+.main__content:after {
   content: "";
   display: table;
   clear: both;
@@ -679,14 +673,77 @@ template {
 /* Набросок стилей для подвала
  ----------------------------------------------------------------------------- */
 .footer {
-  position: relative;
-  height: 359px;
-  background: #bff08e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.footer .container_center {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.footer__content {
+  padding: 150px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 43px;
+}
+
+.footer__link {
+  font-size: 23px;
+  margin-left: 85px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__link:hover {
+  color: #cd6326;
+}
+
+.footer__link:active {
+  color: #8f5613;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__icon {
+  cursor: pointer;
+  margin-left: 27px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__icon:hover #icon-inside {
+  fill: #f7f7f7;
+}
+
+.footer__icon:hover #icon-out {
+  fill: #cd6326;
+}
+
+.footer__icon #icon-inside {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  fill: #134731;
+}
+
+.footer__icon #icon-out {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  fill: #f7f7f7;
 }
 
 :root {
@@ -955,7 +1012,7 @@ template {
 }
 
 .notification__content {
-  margin: 187px auto;
+  margin: 187px auto 224px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,12 +1,57 @@
 /* Набросок стилей для подвала
  ----------------------------------------------------------------------------- */
 .footer {
-  position: relative;
-  height: $footer_height;
-  background: #bff08e;
-  @extend %clear_all;
-  .container_center {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__content {
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+  }
+
+  &__center {
+    display: flex;
+    margin-right: 43px;
+  }
+
+  &__link {
+    font-size: 23px;
+    margin-left: 85px;
+    transition: all 0.3s;
+    &:hover {
+      color: #cd6326;
+    }
+    &:active {
+      color: #8f5613;
+    }
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__icon {
+    cursor: pointer;
+    margin-left: 27px;
+    transition: all 0.3s;
+    &:hover #icon-inside {
+      fill: #f7f7f7;
+    }
+    &:hover #icon-out {
+      fill: #cd6326;
+    }
+    #icon-inside {
+      transition: all 0.3s;
+      fill: #134731;
+    }
+    #icon-out {
+      transition: all 0.3s;
+      fill: #f7f7f7;
+    }
   }
 }
