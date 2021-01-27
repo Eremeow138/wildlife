@@ -10,6 +10,7 @@
     display: inline-block;
     margin: 0 32px;
     transition: all 0.3s;
+    cursor: pointer;
     &:last-child {
       margin-left: 30px;
       margin-right: 0;
@@ -20,15 +21,19 @@
     &:active {
       color: #8f5613;
     }
-    svg {
-      cursor: pointer;
+    svg #search{
+
       vertical-align: middle;
+      fill: white;
+      transition: all 0.3s;
     }
     svg:hover #search {
       fill: #cd6326;
+      transition: all 0.3s;
     }
     svg:active #search {
       fill: #8f5613;
+      transition: all 0.3s;
     }
   }
   &__link {

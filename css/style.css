@@ -641,6 +641,7 @@ template {
   margin: 0 32px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .navbar__item:last-child {
@@ -656,17 +657,23 @@ template {
   color: #8f5613;
 }
 
-.navbar__item svg {
-  cursor: pointer;
+.navbar__item svg #search {
   vertical-align: middle;
+  fill: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbar__item svg:hover #search {
   fill: #cd6326;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbar__item svg:active #search {
   fill: #8f5613;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 /* Набросок стилей для подвала
