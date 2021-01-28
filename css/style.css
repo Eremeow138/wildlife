@@ -691,16 +691,30 @@ template {
           justify-content: space-between;
 }
 
-.footer__center {
+.footer__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 43px;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.footer__item {
+  margin: 0 43px;
+}
+
+.footer__item:first-child {
+  margin-left: 0;
+}
+
+.footer__item:last-child {
+  margin-right: 0;
 }
 
 .footer__link {
   font-size: 23px;
-  margin-left: 85px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -713,17 +727,23 @@ template {
   color: #8f5613;
 }
 
-.footer__right {
+.footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__icon {
-  cursor: pointer;
   margin-left: 27px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.footer__icon:first-child {
+  margin-left: 0;
 }
 
 .footer__icon:hover #icon-inside {
