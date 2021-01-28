@@ -571,6 +571,15 @@ template {
   padding-bottom: 359px;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+}
+
 /* Набросок стилей для шапки
  ----------------------------------------------------------------------------- */
 .header {
@@ -854,6 +863,7 @@ template {
   font-weight: 400;
   letter-spacing: 2px;
   color: #cd6326;
+  margin: 0;
 }
 
 .survival__description {
