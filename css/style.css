@@ -827,7 +827,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 779px;
 }
 
 .survival__content {
@@ -856,7 +856,7 @@ template {
 
 .survival__description {
   margin-top: 59px;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
