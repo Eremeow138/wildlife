@@ -594,6 +594,10 @@ template {
   padding: 20px 0;
 }
 
+.logotype {
+  width: 239px;
+}
+
 .logotype__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,20 +701,11 @@ template {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-left: 10px;
   list-style: none;
-}
-
-.footer__item {
-  margin: 0 43px;
-}
-
-.footer__item:first-child {
-  margin-left: 0;
-}
-
-.footer__item:last-child {
-  margin-right: 0;
+  width: 480px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__link {
