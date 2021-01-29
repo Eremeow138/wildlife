@@ -1009,7 +1009,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 779px;
+  height: 100vh;
   position: relative;
 }
 
@@ -1025,6 +1025,9 @@ template {
 }
 
 @media (min-width: 767px) {
+  .survival {
+    height: 779px;
+  }
   .survival::before {
     display: none;
   }
@@ -1032,7 +1035,7 @@ template {
 
 .survival__content {
   position: relative;
-  margin-top: 108px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1043,6 +1046,12 @@ template {
       -ms-flex-align: center;
           align-items: center;
   z-index: 3;
+}
+
+@media (min-width: 767px) {
+  .survival__content {
+    margin-top: 108px;
+  }
 }
 
 .survival__item {
