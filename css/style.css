@@ -603,6 +603,10 @@ template {
   padding: 20px 0;
 }
 
+.header__navigation {
+  z-index: 2;
+}
+
 .logotype {
   width: 239px;
   z-index: 10;
