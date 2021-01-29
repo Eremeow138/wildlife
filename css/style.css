@@ -625,10 +625,6 @@ template {
   font-size: 32px;
 }
 
-.navbar__link {
-  text-decoration: none;
-}
-
 /* Набросок стилей для навигации
 -------------------------------------------------------------------------------*/
 .navbar {
@@ -681,6 +677,10 @@ template {
   fill: #8f5613;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.navbar__link {
+  text-decoration: none;
 }
 
 /* Набросок стилей для подвала
@@ -930,14 +930,19 @@ template {
           align-items: center;
   z-index: 1;
   position: relative;
+  cursor: pointer;
 }
 
-.slider__button svg {
-  cursor: pointer;
+.slider__button svg #arrow {
   vertical-align: middle;
+  fill: #666666;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .slider__button svg:hover #arrow {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   fill: #cd6326;
 }
 

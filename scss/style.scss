@@ -184,11 +184,14 @@
     align-items: center;
     z-index: 1;
     position: relative;
-    svg {
-      cursor: pointer;
+    cursor: pointer;
+    svg #arrow {
       vertical-align: middle;
+      fill: #666666;
+      transition: all 0.3s;
     }
     svg:hover #arrow {
+      transition: all 0.3s;
       fill: #cd6326;
     }
     svg:active #arrow {
