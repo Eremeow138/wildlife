@@ -4,6 +4,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition-property: transform;
+  transition-duration: 0.5s;
   &__content {
     padding: 150px 0;
     display: flex;

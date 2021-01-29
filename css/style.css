@@ -605,6 +605,13 @@ template {
 
 .logotype {
   width: 239px;
+  z-index: 10;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .logotype__link {
@@ -637,19 +644,65 @@ template {
   margin: 0;
   padding: 0;
   font-size: 23px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+  }
 }
 
 .navbar__item {
-  display: inline-block;
-  margin: 0 32px;
+  display: block;
+  margin: 20px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
 }
 
+@media (min-width: 767px) {
+  .navbar__item {
+    display: inline-block;
+    margin: 0 32px;
+  }
+  .navbar__item:last-child {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+}
+
 .navbar__item:last-child {
-  margin-left: 30px;
-  margin-right: 0;
+  margin: 20px 0;
 }
 
 .navbar__item:hover {
@@ -689,6 +742,12 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .footer__content {
@@ -776,6 +835,118 @@ template {
   --slidesPerScreen: 3;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
+.toggle {
+  position: fixed;
+  cursor: pointer;
+  z-index: 3;
+  left: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 30px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  background-color: transparent;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.toggle:hover {
+  border-color: #cd6326;
+}
+
+.toggle:hover::before {
+  border-color: #cd6326;
+}
+
+.toggle:hover::after {
+  border-color: #cd6326;
+}
+
+.toggle:active {
+  border-color: #8f5613;
+}
+
+.toggle:active::before {
+  border-color: #8f5613;
+}
+
+.toggle:active::after {
+  border-color: #8f5613;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-top: 4px solid white;
+  top: 50%;
+  margin-top: -2px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-top: 4px solid white;
+  top: 50%;
+  margin-top: -2px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+@media (min-width: 767px) {
+  .toggle {
+    display: none;
+  }
+}
+
+.toggle_clicked {
+  border-color: transparent;
+}
+
+.toggle_clicked:hover {
+  border-color: transparent;
+}
+
+.toggle_clicked::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.toggle_clicked::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main_content {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .button {
   background-color: #cd6326;
   border-color: #cd6326;
@@ -839,9 +1010,28 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   height: 779px;
+  position: relative;
+}
+
+.survival::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  .survival::before {
+    display: none;
+  }
 }
 
 .survival__content {
+  position: relative;
   margin-top: 108px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,6 +1042,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 3;
 }
 
 .survival__item {
@@ -1232,5 +1423,10 @@ template {
 .notification__form input[type="url"]:focus:-ms-input-placeholder,
 .notification__form textarea:focus:-ms-input-placeholder {
   color: transparent;
+}
+
+.slide-left {
+  -webkit-transform: translateX(250px);
+          transform: translateX(250px);
 }
 /*# sourceMappingURL=style.css.map */

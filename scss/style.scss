@@ -65,7 +65,89 @@
 :root {
   --slidesPerScreen: 3;
 }
+.wrapper {
+  overflow-x: hidden;
+}
 
+.toggle {
+  position: fixed;
+  cursor: pointer;
+  z-index: 3;
+  left: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 30px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  background-color: transparent;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  &:hover {
+    border-color: #cd6326;
+  }
+  &:hover::before {
+    border-color: #cd6326;
+  }
+  &:hover::after {
+    border-color: #cd6326;
+  }
+  &:active {
+    border-color: #8f5613;
+  }
+  &:active::before {
+    border-color: #8f5613;
+  }
+  &:active::after {
+    border-color: #8f5613;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-top: 4px solid white;
+    top: 50%;
+    margin-top: -2px;
+    transition-property: transform;
+    transition-duration: 0.6s;
+    
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-top: 4px solid white;
+    top: 50%;
+    margin-top: -2px;
+    transition-property: transform;
+    transition-duration: 0.6s;
+
+  }
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+  &_clicked {
+    &:hover {
+      border-color: transparent;
+    }
+    border-color: transparent;
+    &::after {
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.main_content {
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
 .button {
   background-color: #cd6326;
   border-color: #cd6326;
@@ -117,11 +199,30 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 779px;
+  position: relative;
+  &::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  @media (min-width: 767px) {
+    &::before{
+      display: none;
+    }
+  }
   &__content {
+    position: relative;
     margin-top: 108px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 3;
   }
 
   &__item {
@@ -314,4 +415,8 @@
       }
     }
   }
+}
+
+.slide-left {
+  transform: translateX(250px);
 }
