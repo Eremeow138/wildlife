@@ -63,7 +63,17 @@
 @import "core/footer";
 
 :root {
-  --slidesPerScreen: 3;
+  --slidesPerScreen: 1;
+}
+@media (min-width: 424px) {
+  :root {
+    --slidesPerScreen: 2;
+  }
+}
+@media (min-width: 767px) {
+  :root {
+    --slidesPerScreen: 3;
+  }
 }
 .wrapper {
   overflow-x: hidden;
@@ -256,27 +266,40 @@
   }
 
   &__title {
-    margin-top: 114px;
     margin-bottom: 11px;
-    font-size: 48px;
+    margin-top: 50px;
+    font-size: 38px;
+
     color: #333333;
     font-weight: normal;
+    text-align: center;
+    @media (min-width: 767px) {
+      margin-top: 114px;
+      font-size: 48px;
+    }
   }
 
   &__subtitle {
-    font-size: 24px;
+    font-size: 20px;
     color: #666666;
     font-weight: normal;
+    text-align: center;
+    @media (min-width: 767px) {
+      font-size: 24px;
+    }
   }
 }
 
 .slider {
   &__wrapper {
-    margin-top: 104px;
+    margin-top: 50px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    @media (min-width: 767px) {
+      margin-top: 104px;
+    }
   }
 
   &__button {
@@ -311,14 +334,17 @@
     width: 90%;
     overflow: hidden;
     position: relative;
-    height: 360px;
+    height: 280px;
   }
 
   &__slide {
     height: 100%;
     width: calc(100% / var(--slidesPerScreen));
     position: absolute;
-    padding: 0 30px;
+    padding: 0 15px;
+    @media (min-width: 1023px) {
+      padding: 0 30px;
+    }
   }
 
   &__box {
@@ -361,6 +387,7 @@
     font-size: 22px;
   }
   &__subtitle {
+    text-align: center;
     margin-bottom: 43px;
     font-size: 17px;
   }
