@@ -1289,7 +1289,7 @@ template {
 }
 
 .notification__content {
-  margin: 187px auto 224px;
+  margin: 70px auto 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1303,10 +1303,23 @@ template {
   max-width: 660px;
 }
 
+@media (min-width: 767px) {
+  .notification__content {
+    margin: 187px auto 224px;
+  }
+}
+
 .notification__title {
-  font-size: 27px;
+  font-size: 22px;
   color: #333;
   font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .notification__title {
+    font-size: 27px;
+  }
 }
 
 .notification__form {
@@ -1329,15 +1342,31 @@ template {
 .notification__form textarea {
   width: 100%;
   background-color: transparent;
-  padding: 4px 0 0 15px;
+  padding: 4px 0 0 4px;
   border: 1px solid #666666;
   border-right: none;
   outline: none;
-  font-size: 23px;
+  font-size: 18px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: left;
   color: #666;
+}
+
+@media (min-width: 424px) {
+  .notification__form input:not([type]),
+  .notification__form input[type="datetime"],
+  .notification__form input[type="email"],
+  .notification__form input[type="number"],
+  .notification__form input[type="password"],
+  .notification__form input[type="search"],
+  .notification__form input[type="tel"],
+  .notification__form input[type="text"],
+  .notification__form input[type="url"],
+  .notification__form textarea {
+    padding: 4px 0 0 15px;
+    font-size: 23px;
+  }
 }
 
 .notification__form input:not([type])::-webkit-input-placeholder,
@@ -1351,8 +1380,23 @@ template {
 .notification__form input[type="url"]::-webkit-input-placeholder,
 .notification__form textarea::-webkit-input-placeholder {
   font-family: "Roboto";
-  font-size: 23px;
+  font-size: 18px;
   color: #666;
+}
+
+@media (min-width: 424px) {
+  .notification__form input:not([type])::-webkit-input-placeholder,
+  .notification__form input[type="datetime"]::-webkit-input-placeholder,
+  .notification__form input[type="email"]::-webkit-input-placeholder,
+  .notification__form input[type="number"]::-webkit-input-placeholder,
+  .notification__form input[type="password"]::-webkit-input-placeholder,
+  .notification__form input[type="search"]::-webkit-input-placeholder,
+  .notification__form input[type="tel"]::-webkit-input-placeholder,
+  .notification__form input[type="text"]::-webkit-input-placeholder,
+  .notification__form input[type="url"]::-webkit-input-placeholder,
+  .notification__form textarea::-webkit-input-placeholder {
+    font-size: 23px;
+  }
 }
 
 .notification__form input:not([type]):-moz-placeholder,
@@ -1366,8 +1410,23 @@ template {
 .notification__form input[type="url"]:-moz-placeholder,
 .notification__form textarea:-moz-placeholder {
   font-family: "Roboto";
-  font-size: 23px;
+  font-size: 18px;
   color: #666;
+}
+
+@media (min-width: 424px) {
+  .notification__form input:not([type]):-moz-placeholder,
+  .notification__form input[type="datetime"]:-moz-placeholder,
+  .notification__form input[type="email"]:-moz-placeholder,
+  .notification__form input[type="number"]:-moz-placeholder,
+  .notification__form input[type="password"]:-moz-placeholder,
+  .notification__form input[type="search"]:-moz-placeholder,
+  .notification__form input[type="tel"]:-moz-placeholder,
+  .notification__form input[type="text"]:-moz-placeholder,
+  .notification__form input[type="url"]:-moz-placeholder,
+  .notification__form textarea:-moz-placeholder {
+    font-size: 23px;
+  }
 }
 
 .notification__form input:not([type])::-moz-placeholder,
@@ -1381,8 +1440,23 @@ template {
 .notification__form input[type="url"]::-moz-placeholder,
 .notification__form textarea::-moz-placeholder {
   font-family: "Roboto";
-  font-size: 23px;
+  font-size: 18px;
   color: #666;
+}
+
+@media (min-width: 424px) {
+  .notification__form input:not([type])::-moz-placeholder,
+  .notification__form input[type="datetime"]::-moz-placeholder,
+  .notification__form input[type="email"]::-moz-placeholder,
+  .notification__form input[type="number"]::-moz-placeholder,
+  .notification__form input[type="password"]::-moz-placeholder,
+  .notification__form input[type="search"]::-moz-placeholder,
+  .notification__form input[type="tel"]::-moz-placeholder,
+  .notification__form input[type="text"]::-moz-placeholder,
+  .notification__form input[type="url"]::-moz-placeholder,
+  .notification__form textarea::-moz-placeholder {
+    font-size: 23px;
+  }
 }
 
 .notification__form input:not([type]):-ms-input-placeholder,
@@ -1396,8 +1470,23 @@ template {
 .notification__form input[type="url"]:-ms-input-placeholder,
 .notification__form textarea:-ms-input-placeholder {
   font-family: "Roboto";
-  font-size: 23px;
+  font-size: 18px;
   color: #666;
+}
+
+@media (min-width: 424px) {
+  .notification__form input:not([type]):-ms-input-placeholder,
+  .notification__form input[type="datetime"]:-ms-input-placeholder,
+  .notification__form input[type="email"]:-ms-input-placeholder,
+  .notification__form input[type="number"]:-ms-input-placeholder,
+  .notification__form input[type="password"]:-ms-input-placeholder,
+  .notification__form input[type="search"]:-ms-input-placeholder,
+  .notification__form input[type="tel"]:-ms-input-placeholder,
+  .notification__form input[type="text"]:-ms-input-placeholder,
+  .notification__form input[type="url"]:-ms-input-placeholder,
+  .notification__form textarea:-ms-input-placeholder {
+    font-size: 23px;
+  }
 }
 
 .notification__form input:not([type]):hover,
@@ -1476,6 +1565,19 @@ template {
 .notification__form input[type="url"]:focus:-ms-input-placeholder,
 .notification__form textarea:focus:-ms-input-placeholder {
   color: transparent;
+}
+
+@media (max-width: 768px) {
+  .notification__form > .button {
+    padding: 15px 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .notification__form > .button {
+    font-size: 18px;
+    padding: 12px 10px;
+  }
 }
 
 .slide-left {

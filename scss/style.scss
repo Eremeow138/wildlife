@@ -395,17 +395,25 @@
 .notification {
   background-color: #cccccc;
   &__content {
-    margin: 187px auto 224px;
+    margin: 70px auto 70px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 660px;
+    @media (min-width: 767px) {
+      margin: 187px auto 224px;
+    }
   }
 
   &__title {
-    font-size: 27px;
+    font-size: 22px;
     color: #333;
     font-weight: 400;
+    text-align: center;
+    @media (min-width: 767px) {
+      font-size: 27px;
+    }
   }
 
   &__form {
@@ -417,18 +425,25 @@
       width: 100%;
 
       background-color: transparent;
-      padding: 4px 0 0 15px;
+      padding: 4px 0 0 4px;
       border: 1px solid #666666;
       border-right: none;
       outline: none;
-      font-size: 23px;
+      font-size: 18px;
       transition: all 0.3s;
       text-align: left;
       color: #666;
+      @media (min-width: 424px) {
+        padding: 4px 0 0 15px;
+        font-size: 23px;
+      }
       @include placeholder {
         font-family: "Roboto";
-        font-size: 23px;
+        font-size: 18px;
         color: #666;
+        @media (min-width: 424px) {
+          font-size: 23px;
+        }
       }
 
       &:hover {
@@ -441,6 +456,15 @@
           color: transparent;
         }
       }
+    }
+  }
+  &__form > .button {
+    @media (max-width: 768px) {
+      padding: 15px 15px;
+    }
+    @media (max-width: 425px) {
+      font-size: 18px;
+      padding: 12px 10px;
     }
   }
 }
