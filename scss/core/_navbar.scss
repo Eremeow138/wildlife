@@ -20,7 +20,7 @@
   z-index: 2;
   @media (min-width: 767px) {
     flex-direction: row;
-    justify-content: initial;
+
     position: initial;
     width: initial;
     height: initial;
@@ -32,16 +32,19 @@
     margin: 20px 0;
     transition: all 0.3s;
     cursor: pointer;
+    &:last-child {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     @media (min-width: 767px) {
       display: inline-block;
       margin: 0 32px;
       &:last-child {
+        margin-top: 0;
+        margin-bottom: 0;
         margin-left: 30px;
         margin-right: 0;
       }
-    }
-    &:last-child {
-      margin: 20px 0;
     }
     &:hover {
       color: #cd6326;

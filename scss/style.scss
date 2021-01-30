@@ -335,6 +335,9 @@
     overflow: hidden;
     position: relative;
     height: 280px;
+    @media (min-width: 767px) {
+      height: 360px;
+    }
   }
 
   &__slide {

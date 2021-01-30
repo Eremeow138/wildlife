@@ -676,9 +676,6 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
     position: initial;
     width: initial;
     height: initial;
@@ -694,19 +691,22 @@ template {
   cursor: pointer;
 }
 
+.navbar__item:last-child {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 767px) {
   .navbar__item {
     display: inline-block;
     margin: 0 32px;
   }
   .navbar__item:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 30px;
     margin-right: 0;
   }
-}
-
-.navbar__item:last-child {
-  margin: 20px 0;
 }
 
 .navbar__item:hover {
@@ -1203,6 +1203,12 @@ template {
   overflow: hidden;
   position: relative;
   height: 280px;
+}
+
+@media (min-width: 767px) {
+  .slider__slides {
+    height: 360px;
+  }
 }
 
 .slider__slide {
