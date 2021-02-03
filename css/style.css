@@ -1270,6 +1270,23 @@ template {
   fill: #8f5613;
 }
 
+.slider__button svg #arrow-reverse {
+  vertical-align: middle;
+  fill: #666666;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.slider__button svg:hover #arrow-reverse {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  fill: #cd6326;
+}
+
+.slider__button svg:active #arrow-reverse {
+  fill: #8f5613;
+}
+
 .slider__button_right {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);

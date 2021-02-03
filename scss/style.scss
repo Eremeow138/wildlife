@@ -326,6 +326,18 @@
     svg:active #arrow {
       fill: #8f5613;
     }
+    svg #arrow-reverse {
+      vertical-align: middle;
+      fill: #666666;
+      transition: all 0.3s;
+    }
+    svg:hover #arrow-reverse {
+      transition: all 0.3s;
+      fill: #cd6326;
+    }
+    svg:active #arrow-reverse {
+      fill: #8f5613;
+    }
 
     &_right {
       transform: rotate(180deg);
