@@ -206,6 +206,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #02160b;
   height: 100vh;
   position: relative;
   &::before {
@@ -223,6 +224,9 @@
     &::before {
       display: none;
     }
+  }
+  @media (min-width: 1440px) {
+    background-size: auto;
   }
   &__content {
     position: relative;

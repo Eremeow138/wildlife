@@ -765,12 +765,19 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #181617;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    background-size: auto;
+  }
 }
 
 .footer__content {
@@ -1100,6 +1107,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #02160b;
   height: 100vh;
   position: relative;
 }
@@ -1121,6 +1129,12 @@ template {
   }
   .survival::before {
     display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .survival {
+    background-size: auto;
   }
 }
 

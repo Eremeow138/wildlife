@@ -4,8 +4,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #181617;
   transition-property: transform;
   transition-duration: 0.5s;
+  @media (min-width: 1440px) {
+    background-size: auto;
+  }
   &__content {
     height: 350px;
     padding: 50px 0;
