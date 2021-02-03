@@ -609,7 +609,7 @@ template {
 
 .logotype {
   width: 269px;
-  padding: 0 15px;
+  padding-right: 15px;
   z-index: 10;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -707,6 +707,18 @@ template {
 @media (min-width: 767px) {
   .navbar__item {
     display: inline-block;
+    margin: 0 20px;
+  }
+  .navbar__item:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1023px) {
+  .navbar__item {
     margin: 0 32px;
   }
   .navbar__item:last-child {
