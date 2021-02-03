@@ -70,7 +70,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 5px;
   }
 
   &__icon {
@@ -79,19 +78,17 @@
     &:first-child {
       margin-left: 0;
     }
-    &:hover #icon-inside {
-      fill: #f7f7f7;
-    }
-    &:hover #icon-out {
-      fill: #cd6326;
-    }
-    #icon-inside {
-      transition: all 0.3s;
-      fill: #134731;
-    }
-    #icon-out {
-      transition: all 0.3s;
-      fill: #f7f7f7;
+  }
+  &__circle {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-position: center;
+    transition: all 0.3s;
+    &:hover{
+      background-color: #cd6326;
     }
   }
 }

@@ -884,7 +884,6 @@ template {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 5px;
 }
 
 .footer__icon {
@@ -897,24 +896,19 @@ template {
   margin-left: 0;
 }
 
-.footer__icon:hover #icon-inside {
-  fill: #f7f7f7;
-}
-
-.footer__icon:hover #icon-out {
-  fill: #cd6326;
-}
-
-.footer__icon #icon-inside {
+.footer__circle {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-position: center;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  fill: #134731;
 }
 
-.footer__icon #icon-out {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  fill: #f7f7f7;
+.footer__circle:hover {
+  background-color: #cd6326;
 }
 
 :root {
