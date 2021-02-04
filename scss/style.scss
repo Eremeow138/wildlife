@@ -10,7 +10,6 @@
 // @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
 // Пример подключение шрифта через mixin
 // 4 параметра: 1. Название шрифта; 2. Путь к шрифту; 3. Толщина шрифта(font-weight); 4. Стиль шрифта(font-style)
-// @include font-face("Pusia", "../fonts/Pusia-Bold", 400, normal); // Раскомментировать при использовании
 @include font-face("Roboto", "../fonts/Roboto/Roboto-Bold", bold, normal);
 @include font-face("Roboto", "../fonts/Roboto/Roboto-Black", 900, normal);
 @include font-face("Roboto", "../fonts/Roboto/Roboto-Light", 300, normal);
@@ -78,7 +77,29 @@
 .wrapper {
   overflow-x: hidden;
 }
+.logotype {
+  width: 240px;
+  z-index: 10;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  display: flex;
+  img {
+    max-width: initial;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
 
+  &__text {
+    margin-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 32px;
+  }
+}
 .toggle {
   position: fixed;
   cursor: pointer;

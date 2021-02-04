@@ -1,12 +1,6 @@
 @charset "UTF-8";
 /* Global variables */
 /* ======================================================================== */
-.main__content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -555,7 +549,6 @@ template {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -359px auto;
 }
 
 .container_center {
@@ -563,12 +556,6 @@ template {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Middle
- ----------------------------------------------------------------------------- */
-.main__content {
-  padding-bottom: 359px;
 }
 
 .visually-hidden {
@@ -605,42 +592,6 @@ template {
 
 .header__navigation {
   z-index: 2;
-}
-
-.logotype {
-  width: 240px;
-  z-index: 10;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logotype img {
-  max-width: initial;
-}
-
-.logotype__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logotype__text {
-  margin-left: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 32px;
 }
 
 /* Набросок стилей для навигации
@@ -929,6 +880,42 @@ template {
 
 .wrapper {
   overflow-x: hidden;
+}
+
+.logotype {
+  width: 240px;
+  z-index: 10;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logotype img {
+  max-width: initial;
+}
+
+.logotype__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logotype__text {
+  margin-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 32px;
 }
 
 .toggle {
