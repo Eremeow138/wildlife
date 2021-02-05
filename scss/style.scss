@@ -214,6 +214,9 @@
   &_bd-radius-right {
     border-radius: 0px 5px 5px 0px;
   }
+  &_block{
+    display: block;
+  }
   &:active {
     background-color: #8f5613;
     border-color: #8f5613;
