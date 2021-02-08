@@ -83,12 +83,9 @@
   transition-property: transform;
   transition-duration: 0.5s;
   display: flex;
+  align-items: center;
   img {
     max-width: initial;
-  }
-  &__link {
-    display: flex;
-    align-items: center;
   }
 
   &__text {
