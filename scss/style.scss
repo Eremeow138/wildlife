@@ -178,6 +178,7 @@
   transition-duration: 0.5s;
 }
 .button {
+  display: block;
   background-color: #cd6326;
   border-color: #cd6326;
   border-style: solid;
@@ -214,8 +215,8 @@
   &_bd-radius-right {
     border-radius: 0px 5px 5px 0px;
   }
-  &_block{
-    display: block;
+  &_main-width {
+    width: 160px;
   }
   &:active {
     background-color: #8f5613;
@@ -277,8 +278,8 @@
   }
 
   &__description {
-    margin-top: 59px;
-    margin-bottom: 64px;
+    margin-top: 58px;
+    margin-bottom: 49px;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
